@@ -3,6 +3,7 @@ package image.color.git.lab3_1;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -43,17 +44,29 @@ public class MainActivity extends AppCompatActivity {
             text.setText("Red");
 
             view = findViewById(R.id.container);
-            view.setBackgroundColor(0xFF000000);
+            view.setBackgroundColor(Color.RED);
             Log.d("what", "did it even get here?");
         }
         if (item.getItemId() == R.id.color_green) {
+            text = findViewById(R.id.text);
+            text.setText("Green");
 
+            view = findViewById(R.id.container);
+            view.setBackgroundColor(Color.GREEN);
         }
         if (item.getItemId() == R.id.color_blue) {
+            text = findViewById(R.id.text);
+            text.setText("Blue");
 
+            view = findViewById(R.id.container);
+            view.setBackgroundColor(Color.BLUE);
         }
         if (item.getItemId() == R.id.color_pink) {
+            text = findViewById(R.id.text);
+            text.setText("Pink");
 
+            view = findViewById(R.id.container);
+            view.setBackgroundColor(0xFFFFC0CB);
         }
         return true;
     }
